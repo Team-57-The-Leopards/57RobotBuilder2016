@@ -26,7 +26,6 @@ Intake_Down::Intake_Down(double speed): Command() {
 
 // Called just before this Command runs the first time
 void Intake_Down::Initialize() {
-	DriverStation::ReportWarning("Down Start");
 
 }
 

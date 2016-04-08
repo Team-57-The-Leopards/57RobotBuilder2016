@@ -38,6 +38,7 @@ public:
 	double GetPos();
 	void GotoPos(double pos);
 	void HoldPos();
+	void SetLimits(double max, double min);
 };
 
 #endif

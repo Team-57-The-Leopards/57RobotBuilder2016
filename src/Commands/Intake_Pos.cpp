@@ -26,12 +26,12 @@ Intake_Pos::Intake_Pos(double pos): Command() {
 
 // Called just before this Command runs the first time
 void Intake_Pos::Initialize() {
+	Robot::intakeArm->SetLimits(+12.0, -12.0);
 	Robot::intakeArm->GotoPos(m_pos);
 }
 
 // Called repeatedly when this Command is scheduled to run
 void Intake_Pos::Execute() {
-
 }
 
 // Make this return true when this Command no longer needs to run execute()

@@ -71,3 +71,8 @@ void IntakeArm::HoldPos()
 {
 	GotoPos(motor->GetPosition());
 }
+
+void IntakeArm::SetLimits(double max, double min)
+{
+	motor->ConfigPeakOutputVoltage(max,min);
+}
